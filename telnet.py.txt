@@ -1,0 +1,19 @@
+import getpass
+import telnetlib
+
+HOST = localhost
+user = input(Enter your remote account )
+password = getpass.getpass()
+
+tn = telnetlib.Telnet(HOST)
+
+tn.read_until(blogin )
+tn.write(user.encode('ascii') + bn)
+if password
+    tn.read_until(bPassword )
+    tn.write(password.encode('ascii') + bn)
+
+tn.write(blsn)
+tn.write(bexitn)
+
+print(tn.read_all().decode('ascii'))
